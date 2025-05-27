@@ -1,0 +1,300 @@
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/Montserrat-Bold.woff2") format("woff2");
+    font-display: swap;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.6); 
+    position: fixed;
+    width: 100%;
+}
+
+.header__list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__link {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    color: #fff;
+    transition: all 0.15s;
+}
+
+.header__link:hover {
+    border-radius: 30px;
+    background-color: #fff;
+    color: #000;
+}
+
+.welcome {
+    background-image: url(../img/welcome-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.welcome .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.welcome__title {
+    font-weight: 700;
+    font-size: 80px;
+    color: #fff;
+}
+
+.welcome__subtitle {
+    margin-top: 210px;
+    order: -5;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+}
+
+.welcome__desc {
+    margin-bottom: 210px;
+    font-weight: 800;
+    font-size: 25px;
+    color: #555555;
+}
+
+.about {
+    padding: 80px 0;
+}
+
+.about .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__title {
+    padding: 10px;
+    border: 5px solid #000;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 0.36em;
+    text-align: center;
+}
+
+.about__subtitle {
+    margin-top: 70px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 139%;
+    color: #050505;
+}
+
+.about__img {
+    margin-top: 80px;
+}
+
+.skills {
+    padding: 80px 0;
+}
+
+.skills .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills__title {
+    padding: 10px;
+    border: 5px solid #000;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 0.36em;
+}
+
+.skills__text {
+    margin-top: 80px;
+    align-self: flex-start;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 0.19em;
+}
+
+.skills__wrapper{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.skills__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills__desc {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+    background-color: #1a1a1a;
+    background-image: url(../img/portfolio-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.portfolio__title {
+    margin: 125px 0;
+    padding: 10px;
+    border: 5px solid #000;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 0.36em;
+}
+
+.portfolio__card-row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    padding: 0 15px;
+    margin-top: 4px;
+}
+
+.contacts {
+    padding-bottom: 80px;
+}
+
+.contacts .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts__title {
+    margin: 80px 0;
+    padding: 10px;
+    border: 5px solid #000;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 0.36em;
+}
+
+.contacts__row {
+    display: flex;
+    gap: 50px;
+}
+
+.footer {
+    padding: 80px 0;
+    background-color: #1a1a1a;
+}
+
+.footer .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__text {
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.19em;
+    color: #fff;
+}
+
+.footer__rights {
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer__rights--dark {
+    font-weight: 400;
+}
+
+@media (max-width: 800px){
+    .portfolio__card-row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:530px){
+    .header__list{
+        flex-direction: column;
+    }
+
+    .welcome__title{
+        font-size: 30px;
+    }
+
+    .welcome__subtitle{
+        font-size: 20px;
+    }
+
+    .welcome__desc{
+        font-size: 20px;
+    }
+}
