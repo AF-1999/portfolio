@@ -26,6 +26,9 @@
                     </li>
                 </ul>
             </nav>
+            <div class="burger">
+                <span class="burger__span"></span>
+            </div>
         </div>
     </header>
     <main class="main">
@@ -138,5 +141,11 @@
             <p class="footer__rights">@2025 Александр Филиппов <span class="footer__rights--dark">Все права защищены</span></p>
         </div>
     </footer>
+    <script>
+        document.querySelector(".burger").addEventListener("click", function(){
+            this.classList.toggle("active");
+            document.querySelector(".header__nav").classList.toggle("open");
+        })
+    </script>
 </body>
 </html>
