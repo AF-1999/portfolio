@@ -55,9 +55,6 @@ body{
     justify-content: flex-end;
 }
 header .wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
 }
 
 .header__list {
@@ -66,9 +63,6 @@ header .wrapper{
     align-items: center;
 }
 
-.header__item{
-    align-self: center;
-}
 
 .burger {
     display: none;
@@ -270,10 +264,10 @@ header .wrapper{
 
 .portfolio__card-row{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 15px;
     padding: 0 15px;
-    margin-top: 4px;
+    margin-top: 60px;
 }
 
 .contacts {
