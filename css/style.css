@@ -353,7 +353,7 @@ header .wrapper{
         z-index: 50;
         overflow-y: auto;
         padding: 50px 40px;
-        background-color: #000;
+        background-color: rgba(0, 0, 0, 0.8); 
     }
 
     .header__list{

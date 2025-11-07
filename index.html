@@ -13,7 +13,7 @@
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__item">
-                        <a href="#about" class="header__link">Об о мне</a>
+                        <a href="#about" class="header__link">О себе</a>
                     </li>
                     <li class="header__item">
                         <a href="#skills" class="header__link">Навыки</a>
@@ -140,7 +140,14 @@
         document.querySelector(".burger").addEventListener("click", function(){
             this.classList.toggle("active");
             document.querySelector(".header__nav").classList.toggle("open");
-        })
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100 && document.querySelector(".header__nav").classList.contains('open')) {
+                document.querySelector(".burger").classList.remove("active");
+                document.querySelector(".header__nav").classList.remove('open');
+            }
+            });
     </script>
 </body>
 </html>
